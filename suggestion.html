@@ -59,19 +59,19 @@
  <h3></h3>
  <p> </p>
  <div class="ff">
-<div class="row">
+<div  class="row">
   <div class="col">
-    <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+    <input type="text" id="name" class="form-control" placeholder="Name" aria-label="First name">
   </div>
   <div class="col">
-    <input type="text" class="form-control" placeholder="Project Title" aria-label="Last name">
+    <input type="text" id="project" class="form-control" placeholder="Project Title" aria-label="Last name">
   </div>
   <div class="form-floating">
-  <textarea class="form-control textarea1" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <textarea class="form-control textarea1" id="comment" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
   <label for="floatingTextarea2">Comment</label>
 
 </div>
-<button type="button" class="btn btn2 btn-outline-secondary btnmsg">Send Message</button>
+<button type="button" class="btn btn2 btn-outline-secondary btnmsg" onclick="dlt()">Send Message</button>
 </div>
 </div></div></div>
 
@@ -92,6 +92,17 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+
+</script>
+<script>  
+
+function dlt() {
+    document.getElementById("name").value = "";
+    document.getElementById("project").value = "";
+    document.getElementById("comment").value = "";
+}
+
+</script>
 </body>
 </html>
